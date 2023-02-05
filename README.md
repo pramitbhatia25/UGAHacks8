@@ -1,4 +1,4 @@
-# GamerH
+# UGAHacks8
 
 To create a local build, download the project and follow the steps below:
 
