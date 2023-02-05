@@ -1,0 +1,38 @@
+.chatbot {
+    position: absolute;
+    text-align: center;
+    height:auto;
+    top: 150px;
+    left: 50%;
+    transform: scale(1.15);
+    overflow: hidden;
+    ::-webkit-scrollbar {
+        display: none;
+    }
+}
+
+.openai_text {
+    position: absolute;
+    margin-top: 5px;
+    font-size: 40px;
+	font-family: "Coolvetica";
+    color: white;
+    left: 20%;
+    width: 20%;
+
+}
+
+.openai_text_2 {
+    position: absolute;
+    margin-top: 250px;
+    font-size: 40px;
+	font-family: "Coolvetica";
+    color: white;
+    left: 20%;
+    width: 20%;
+}
+
+.dbpedia {
+    color: black;
+    size: 20px;
+}

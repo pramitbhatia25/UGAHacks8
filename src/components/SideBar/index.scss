@@ -1,0 +1,189 @@
+.nav-bar {
+    background: transparent;
+    width: 100%;
+    height: 100px;
+    position: absolute;
+    top:0;
+    z-index: 3;
+
+    .logo {
+        padding: 8px 0;
+        margin-left:20px;
+        padding-bottom: 20px;
+        // position:absolute;
+        text-decoration: none;
+
+        h4 {
+            color: white;
+            text-decoration: none;
+            font-size: 50px;
+            display: inline;
+            width: 24px;
+            font-family: "Bungee Shade";
+        }
+    }
+
+    nav {
+        text-align: right;
+        height: auto;
+        width: 85%;
+        left: 10%;
+        position: absolute;
+        margin-top: -50px;
+        a {
+            margin-left: 20px;
+            margin-right: 20px;
+            font-size: 22px;
+            color: white;
+            line-height: 51px;
+            height: 51px;
+            position: relative;
+            text-decoration: none;
+            i {
+                transition: all 0.3s  ease-out;
+            }
+
+            &:hover {
+                color: #ffd700;
+
+                svg {
+                    opacity: 0;
+                }
+
+                &:after {
+                    opacity: 1;
+                }
+            }
+
+            &:after {
+                content: '';
+                font-size: 9px;
+                letter-spacing: 2px;
+                position: absolute;
+                bottom: -15px;
+                right: 0;
+                left:-10px;
+                display: block;
+                width: 100%;
+                text-align: center;
+                opacity: 0;
+                transition: all 0.3s ease-out;
+            }
+
+            &:first-child {
+                &::after {
+                    content: 'HOME';
+                }
+            }
+        }
+
+        a.about-link {
+            &:after {
+                content: 'ABOUT';
+            }
+        }
+
+        a.contact-link {
+            &:after {
+                content: 'CONTACT';
+            }
+        }
+
+        a.signup-link {
+            &:after {
+                content: 'SIGNUP';
+            }
+        }
+        a.login-link {
+            &:after {
+                content: 'LOGIN';
+            }
+        }
+        a.leaderboard-link {
+            &:after {
+                content: 'LEADERBOARD';
+            }
+        }
+        a.chart-link {
+            &:after {
+                content: 'HISTORY';
+            }
+        }
+        a.friends-link {
+            &:after {
+                content: 'CHATBOT';
+            }
+        }
+        a.signout-link {
+            &:after {
+                content: 'LOGOUT';
+            }
+        }
+
+        a.active {
+            svg {
+                color: #ffd700;
+            }
+        }
+    }
+
+}
+
+.hamburger-icon, .close-icon {
+    display: none;
+  }
+  
+  
+@media screen and (max-width: 1200px) {
+    .nav-bar { 
+        background: transparent;
+        position: initial;
+        height: auto;
+        min-height: auto;
+    
+         ul, nav {
+          display: none;
+         }
+    
+         nav {
+          width: 100%;
+          top: 0;
+          left: 0;
+          background: black;
+          height: 100%;
+          margin: 0;
+          z-index: 2;
+          position: fixed;
+    
+          &.mobile-show {
+            display: block;
+          }
+    
+          a {
+            font-size: 24px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+          }
+    
+          a:after {
+            font-size: 15px;
+            opacity: 1;
+            position: initial;
+            width: auto;
+            margin-left: 10PX;
+          }
+    
+          a svg {
+            opacity: 1 !important;
+          }
+         }
+    
+         .hamburger-icon,
+         .close-icon {
+            position: absolute;
+            top: 15px;
+            right: 15px;
+            display: block;
+         }}
+  }

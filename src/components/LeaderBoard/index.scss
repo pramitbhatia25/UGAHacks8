@@ -1,0 +1,33 @@
+.leaderboard_list {
+    border: 1px solid white;
+    width: 80vw;
+    margin: auto;
+    margin-top: 10%;
+}
+
+.leaderboard_list_item {
+    background-color: white;
+    border: 1px solid white;
+    border-left: 0px;
+    border-right: 0px;
+    color: black;
+    width: 100%;
+    margin-top: 30px;
+    font-size: 20px;
+    line-height: 45px;
+    font-family: 'Coolvetica';
+    display: flex;
+    justify-content: space-between;
+}
+
+.item {
+    display: inline;
+    margin-left: 5vw;
+    margin-right: 5vw;
+}
+
+@media screen and (max-width: 800px) {
+    .leaderboard_list_item {
+        font-size: 12px;
+    }
+}
