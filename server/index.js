@@ -41,12 +41,12 @@ app.get('/api/fetchUsers', async (req, res) => {
 
 app.put('/api/updateFoodListing', async (req, res) => {
     let food_listings = req.body.food_listings;
-    console.log("A", food_listings)
+    let lifep = req.body.lifep;
     let email = req.body.email;
 	try {
 		await User.updateOne(
             {email: email},
-            {$set: {food_listings: food_listings}}
+            {$set: {food_listings: food_listings, lifep:lifep}}
 		);
 		res.json({ status: 'ok' })
 	} catch (err) {

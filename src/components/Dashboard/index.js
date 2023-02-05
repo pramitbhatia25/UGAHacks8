@@ -70,8 +70,11 @@ const DashBoard = () => {
             let food_listings = user.food_listings;
             food_listings.push({ address: location, time: time, no_of_spots: spots, spot_passwords: passwords });
             let lifep = 0;
+            for(var i = 0; i < food_listings.length; i++)
+            {
+                lifep += food_listings[i].no_of_spots;
+            }
             let community = user.community;
-            console.log("AQQQ", user.food_listings)
 
             const response = await fetch('http://localhost:1337/api/updateFoodListing', {
                 headers: {
@@ -80,7 +83,7 @@ const DashBoard = () => {
                 method: 'PUT',
                 body: JSON.stringify({
                     // pass: "", email: "", name:"", phone: "", food_listings: "", lifep: "", community:""
-                    email, food_listings
+                    email, food_listings, lifep
                 }),
             })
             console.log(response.status)

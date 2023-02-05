@@ -23,23 +23,31 @@ Particle {
     max-height: 90%;
   }
 
-  .hh5, .hh6 {
+  .hh5 {
       color: white;
-      font-family: 'Bungee Shade';
+      font-family: 'Coolvetica';
       font-weight: 400;
-      font-size: 90px;
-      width: 70%;
-      margin-left: 30px;
+      font-size: 70px;
+      width: 100%;
       height: auto;
       position: absolute;
-      top: 30px;
+      top: 100px;
       opacity: 0;
       display: inline;
       animation: rotateIn 1s linear both;
   }
+
   .hh6 {
-    top: 700px;
-    width: 100%;
+      color: white;
+      font-family: 'Coolvetica';
+      font-weight: 400;
+      font-size: 40px;
+      width: 100%;
+      position: absolute;
+      top: 320px;
+      opacity: 0;
+      display: inline;
+      animation: rotateIn 1s linear both;
   }
 
   h1 {
@@ -144,9 +152,9 @@ Particle {
 
 .lottie {
   position: absolute;
-  top: 800px;
+  top: 920px;
   right: 200px;
-  height: 400px;
+  height: 600px;
   background-color: black;
   border: 5px solid white;
   background-color: white;
@@ -169,7 +177,7 @@ Particle {
     background-color: white;
   }
 
-  .hh5, .hh6 {
+  .hh5 {
       color: white;
       font-family: 'Bungee Shade';
       font-weight: 400;

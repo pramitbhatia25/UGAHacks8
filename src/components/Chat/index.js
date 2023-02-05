@@ -140,7 +140,7 @@ function Chat() {
         <Particle />
         <div className="nav-bar">
             <Link onClick={() => setShowNav(false)} className="logo" to="/home" >
-                <h4>G</h4>
+                <h4>LIFE-NET</h4>
             </Link>
             <ThemeProvider theme={theme}>
                 <div className="chatbot">

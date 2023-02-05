@@ -16,8 +16,6 @@ function LeaderBoard() {
 
         const data = await res.json();
         let temp = []
-        console.log("AA", data.users[0].food_listings);
-        console.log("AA", data.users[1].food_listings);
         console.log(data.users.length)
         let t_users = [];
         for (var i = 0; i < data.users.length; i++) {
